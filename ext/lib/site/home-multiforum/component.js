@@ -46,7 +46,7 @@ export default class HomeMultiforumOverride extends Component {
     return (
       <div className='ext-home-multiforum'>
         <Anchor id='container'>
-          <BannerForoVecinal title="Presupuesto participativo - Facultades" texts={this.state.texts} />
+          <BannerForoVecinal title={<div> PRESUPUESTO PARTICIPATIVO  <br/><span className='subtitle'> Universidad de Mar del Plata </span> </div>} texts={this.state.texts} />
           <ThumbsVoto texts={this.state.texts} />
           {/* <div className="banner-ideas">
             <img src="/ext/lib/site/home-multiforum/icon-idea.svg" alt="Ideas"/>
@@ -56,7 +56,7 @@ export default class HomeMultiforumOverride extends Component {
           {/* <Barrios /> */}
           <BannerWelcome />
           <Jump goTop={this.goTop} />
-          <Footer />
+          <Footer/>
         </Anchor>
       </div>
     )

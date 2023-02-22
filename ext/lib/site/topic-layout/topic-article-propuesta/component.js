@@ -182,7 +182,8 @@ class TopicArticle extends Component {
             <div className="panel-body">
               {/* { !isProyecto && <div><b>Creado por</b><br />{topic.owner.firstName}</div> } */}
               <div><b>Tema</b><br /><div className="tema" style={{backgroundColor: topic.tag.color }}>{ topic.tag.name }</div></div>
-              <div><b>Tipo</b><br />{ isProyecto ? 'Proyecto' : 'Idea' }</div>
+              <div><b>Autor/es/as</b><br />{ topic.owner.firstName + ' ' + topic.owner.lastName}</div>
+              <div><b>facultad</b><br />{ topic.owner.facultad.nombre}</div>
               {isProyecto && <div><b>Monto estimado</b><br />${topic.attrs.presupuesto.toLocaleString()}</div>}
               </div>
           </div>

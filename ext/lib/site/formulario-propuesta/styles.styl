@@ -6,8 +6,11 @@
   display: flex
   flex-direction: column
   align-items: center
-  @media (max-width: 400px)
-    margin-top: 140px
+  hr
+    @media (max-width: 767px)
+      width: 80%
+      border-top-color:principal-dark-color
+      margin: 24px 0 0 0 
   .propuesta-header
     color: white
     // text-shadow: 0 1px 3px #333
@@ -26,7 +29,7 @@
     h1
       font-size: 32px
       margin:0;
-      background-color: #990070;
+      background-color: principal-color;
       padding: 10px 20px;
       @media screen and (min-width: 764px)
         font-size: 32px
@@ -67,8 +70,9 @@
         color: #484747
         font-size: 16px
         text-align: center
+        line-height: 24px;
       .section-intro
-        background-color: #8c1e80
+        background-color: principal-color
         font-size: 16px
         color: white
         padding: 4px 20px
@@ -81,6 +85,10 @@
       margin: 10px 0 15px;
       font-size: 25px;
       font-weight: bold;
+      @media(max-width: 600px)
+        font-size: 16px;
+        margin: 8px 0;
+
 
     input
       width:100%
@@ -92,7 +100,7 @@
 
     input, select
       border-radius: 0px
-      border: 1px solid #000
+      border: 1px solid #B8B8B8
       //border-bottom: 2px solid #CACACA
       font-size: 1rem
       height: 3rem;
@@ -104,7 +112,7 @@
         border-bottom: 2px solid #000
     textarea
       border-radius: 0px
-      border: 1px solid #000
+      border: 1px solid #B8B8B8
       //border-bottom: 2px solid #CACACA
       font-size: 1rem
       color: #000
@@ -116,9 +124,9 @@
     .submit-div
       text-align: center
       .submit-btn
-        color: #8c1e80
+        color: principal-color
         font-weight: 800
-        border: 2px solid #8c1e80
+        border: 2px solid principal-color
         background-color: #FFF;
         border-radius: 5px
         padding: 12px 60px
@@ -126,7 +134,7 @@
         font-size: 21px
         cursor: pointer
         &:hover
-          background-color: #8c1e80;
+          background-color: principal-color;
           color: #FFF
     .form-section-label
       color: #9e41b9
@@ -161,7 +169,7 @@
       cursor: pointer;
 
   .add-color
-    color: #8c1e80;
+    color: principal-color;
   .help-text
     display: block
     font-size: 16px

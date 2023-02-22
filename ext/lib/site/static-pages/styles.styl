@@ -502,7 +502,7 @@
       display: inline-flex
       justify-content: center
       align-items: center
-      background-color: #990070
+      background-color: principal-color
       color: white
       text-align: center
       margin: 0 auto
@@ -949,7 +949,7 @@ h3.underline
 
 .Collapsible
   text-align: left;
-  border-top: 1px solid #7cbb42;
+  border-top: 1px solid principal-color;
   padding: 20px 0px;
 
 .Collapsible__trigger
@@ -972,7 +972,7 @@ h3.underline
     left: 0;
     right: 0;
   .the-subbanner
-    background-color: #BF4588;
+    background-color: principal-color;
     font-size: 20px;
     text-align: center;
     padding: 20px 40px;
@@ -1046,7 +1046,7 @@ h3.underline
       font-weight: 700;
       box-shadow: inset 3.72576px 3.72576px 3.72576px rgba(255, 255, 255, 0.25), inset -3.72576px -3.72576px 3.72576px rgba(0, 0, 0, 0.25);
       &:hover
-        background: #BF4588;
+        background: principal-color;
         color: #FFF;
         box-shadow: inset -3.72576px -3.72576px 3.72576px rgba(255, 255, 255, 0.25), inset 3.72576px 3.72576px 3.72576px rgba(0, 0, 0, 0.25);
     .agenda-button-confirm
@@ -1076,13 +1076,26 @@ h3.underline
 .banner-static-2022
   padding: 80px 0;
   text-align: center;
-  color: #8C0375
+  color: #000
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+  .banner
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    height: 180px;
+    background-size: cover;
+    background-image: url(ext/lib/site/ppunmgpImgBanner.jpg);
+    background-repeat: no-repeat;
+    padding: 0;
+  &.about
+    background-image: unquote("url('/ext/lib/site/home-multiforum/bg-mundo.png')");
+    background-size: cover;
 .post-banner-static-2022
-  padding: 15px;
+  width: 50%
+  padding: 15px 38px;
   margin-top: -30px;
   margin-bottom: 50px;
-  background-color: #BF4588
+  background-color: principal-color
   text-align: center;
   font-weight: 700;
   color: #FFF;

@@ -319,6 +319,7 @@ class FormularioPropuesta extends Component {
           }
         </div>
         {/* FORMULARIO GOES BEHIND THIS */}
+        <hr/>
         <form className='wrapper' onSubmit={this.handleSubmit}>
           <div className="bar-section">
             <p className="section-title">Tus datos</p>

@@ -3,21 +3,21 @@ const dbReady = require('lib/models').ready
 const Text = require('lib/models').Text
 
 const textsData = [
-	{ "name": "home-subtitle", "text": "Muchas Gracias" },
-	{ "name": "home-subtitle-text", "text": "home-subtitle-text" },
+	{ "name": "home-subtitle", "text": "¡Accedé a las ideas!" },
+	{ "name": "home-subtitle-text", "text": "Con PPUNDMP vas a poder presentar las ideas que la Universidad necesita para que entre todos podamos mejorarla." },
 	{ "name": "home-video1-mp4", "text": "https://cldup.com/pQZlAEpzw0.mp4" },
 	{ "name": "home-video1-webm", "text": "https://cldup.com/b5-PScfd-V.webm" },
 	{ "name": "home-video2-mp4", "text": "https://cldup.com/w4RSGFJStA.mp4" },
 	{ "name": "home-video2-webm", "text": "https://cldup.com/0Cy2GaQ-cR.webm" },
-	{ "name": "home-icono1-imagen", "text": "https://i.ibb.co/Fgf5xgb/foros-vecinales-icono.png" },
+	{ "name": "home-icono1-imagen", "text": "https://i.ibb.co/NybQKTH/Group-1051.png" },
 	{ "name": "home-icono1-titulo", "text": "¿Qué es?" },
-	{ "name": "home-icono1-texto", "text": "home-icono1-texto" },
-	{ "name": "home-icono2-imagen", "text": "https://i.ibb.co/9VjQQHy/icon-propuestas.png" },
-	{ "name": "home-icono2-titulo", "text": "¿Qué puedo proponer?" },
-	{ "name": "home-icono2-texto", "text": "home-icono2-texto" },
-	{ "name": "home-icono3-imagen", "text": "https://i.ibb.co/BttPHbc/icon-seguimiento.png" },
-	{ "name": "home-icono3-titulo", "text": "¿Cómo sigo los proyectos?" },
-	{ "name": "home-icono3-texto", "text": "home-icono3-texto" }
+	{ "name": "home-icono1-texto", "text": "Participa MGP es un proyecto por el cual vas a poder presentar las propuestas e ideas que tu barrio necesita. Luego, a través del voto, los vecinos del barrio van a poder decidir en qué utilizar parte del presupuesto del Municipio" },
+	{ "name": "home-icono2-imagen", "text": "https://i.ibb.co/QpzFsyT/como-participo.png" },
+	{ "name": "home-icono2-titulo", "text": "¿Cómo participo?" },
+	{ "name": "home-icono2-texto", "text": "¡Sumá tus ideas por área temática! Podés elegir inversiones sobre mejoras del espacio público, seguridad, tránsito, deporte, educación, salud y cultura entre otros temas. Los proyectos que sean factubles (legal, técnica y presupuestariamente) serán sometidos a votación y los ganadores se realizarán en el año siguiente." },
+	{ "name": "home-icono3-imagen", "text": "https://i.ibb.co/98HVNXq/como-seguimos.png" },
+	{ "name": "home-icono3-titulo", "text": "¿Cómo seguimos?" },
+	{ "name": "home-icono3-texto", "text": "A partir del 22 de noviembre, podés subir tu idea y participar colaborativamente en las del resto de los vecinos. Cada zona contará con reuniones zonales y un Grupo de Consejeros. Ellos son quienes te van a acompañar en el asesoramiento en la etapa de ideación." }
 ]
 
 /**

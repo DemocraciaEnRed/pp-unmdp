@@ -310,15 +310,16 @@ class HomePropuestas extends Component {
 
   renderSortFilter () {
     return (
-      <div>
-        {
+      <div className='title-sort'>
+        {/* {
           config.propuestasVisibles &&
-            <h4 className='topics-title'>Lista de ideas</h4>
+            <h4 className='topics-title'>Lista de ideas y Proyectos</h4>
         }
         {
           config.votacionVisible &&
             <h4 className='topics-title'>Lista de proyectos</h4>
-        }
+        } */}
+        <h4 className='topics-title'>Lista de ideas y Proyectos</h4>
         <div className='topics-filters'>
           {/* this.state.forumStates &&
             <div className='topics-filter topics-state-filter'>
@@ -338,7 +339,7 @@ class HomePropuestas extends Component {
                 ))}
             </div>
           */}
-          {/* this.state.topics && this.state.topics.length > 0 &&
+          {this.state.topics && this.state.topics.length > 0 &&
             <div className='topics-filter topics-sort-filter'>
               <span>Ordenar por</span>
               {Object.keys(filters).map((key) => (
@@ -351,7 +352,7 @@ class HomePropuestas extends Component {
                   </button>
                 ))}
             </div>
-          */}
+         }
         </div>
       </div>
     )
@@ -483,12 +484,13 @@ class HomePropuestas extends Component {
 
         <Anchor id='container'>
           <BannerListadoTopics
-            btnText={config.propuestasAbiertas ? 'Subí tu idea' : undefined}
-            btnLink={config.propuestasAbiertas ? '/formulario-idea' : undefined}
-            title={config.propuestasVisibles ? 'Conocé las ideas del PPUNR' : 'PPUNR 2022'}
+            //btnText={config.propuestasAbiertas ? 'Subí tu idea' : undefined}
+            //btnLink={config.propuestasAbiertas ? '/formulario-idea' : undefined}
+            title='Ideas y Proyectos'
             handlerVotacion={config.votacionAbierta && forum && forum.privileges && forum.privileges.canEdit && this.handlerVotacion}
             user={user}
             voterInformation={voterInformation} />
+
 
           <div className='container'>
             <div className='row'>
@@ -503,8 +505,8 @@ class HomePropuestas extends Component {
                       <h1>{config.propuestasTextoCerradas}</h1>
                     </div>
                   )
-                )
-              }
+                  )
+                }
               {config.votacionVisible &&
                 (config.votacionAbierta
                   ? (
@@ -516,10 +518,13 @@ class HomePropuestas extends Component {
                       <h1>{config.votacionTextoCerrada}</h1>
                     </div>
                   )
-                )
-              }
+                  )
+                }
             </div>
           </div>
+            {config.propuestasAbiertas && <div className='text-center mt-3'>
+              <a className='proyectos-button boton-mandar-idea' tabIndex="0" href="/formulario-idea">Subí tu idea</a>
+              </div>}
 
           <div className='container topics-container'>
             <FilterPropuestas

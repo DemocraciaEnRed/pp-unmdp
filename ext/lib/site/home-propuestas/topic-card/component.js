@@ -135,27 +135,32 @@ export class TopicCard extends Component {
             </div>
           )} */}
         <div className="topic-header-container">
-          <h1 className="topic-card-title" onClick={this.handleWrapperClick}>
-            {isProyecto && topic.attrs &&
-              <span className='topic-number'>#{topic.attrs.numero}</span>
-            }
-            {topic.mediaTitle}
-          </h1>
+          <div className='topic-card-author'> Creado por: <span className='topic-author'>{topic.owner.firstName}</span></div>
           <div className="topic-fecha">{moment(topic.createdAt).format('D-M-YYYY')}</div>
         </div>
-        <p className='topic-card-description'>
-          {text}
-        </p>
+        <div className='topic-card-content'>
+          <h1 className="topic-card-title" onClick={this.handleWrapperClick}>
+              {isProyecto && topic.attrs &&
+                <span className='topic-number'>#{topic.attrs.numero}</span>
+              }
+              {topic.mediaTitle}
+            </h1>
+          <p >
+            {text}
+          </p>
+
+        </div>
         {isProyecto && topic.attrs &&
           <div className='topic-card-description'>
-            <b>Monto estimado:</b> ${topic.attrs.presupuesto.toLocaleString()}
+            <p><b>Monto estimado:</b> ${topic.attrs.presupuesto.toLocaleString()}</p>
           </div>
         }
-        <div className="tags-container">
-          { topic.tag && <span style={{ backgroundColor: topic.tag.color }}>{topic.tag.name}</span> }
-          { isProyecto ? <span>Proyecto</span> : <span>Idea</span>}
-        </div>
         <div className='topic-card-footer'>
+        <div className="tags-container">
+        <i className='icon-tags'></i>
+          { isProyecto ? <span>Proyecto</span> : <span>Idea</span>}
+          { topic.tag && <span style={{ backgroundColor: topic.tag.color }}>{topic.tag.name}</span> }
+        </div>
           {/* { topic.tags && topic.tags.length > 0 && (
               <div className='topic-card-tags'>
                 <span className="glyphicon glyphicon-tag"></span>

@@ -6,18 +6,17 @@ const Facultad = models.Facultad
 const Claustro = models.Claustro
 
 const facultades = [
-  { nombre: 'Arquitectura, Planeamiento y Diseño', abreviacion: 'FAPyD' },
-  { nombre: 'Ciencias Agrarias', abreviacion: 'FCAGR' },
-  { nombre: 'Ciencias Bioquímicas y Farmacéuticas', abreviacion: 'FBIOyF' },
-  { nombre: 'Ciencias Económicas y Estadística', abreviacion: 'FCECON' },
-  { nombre: 'Ciencias Exactas, Ingeniería y Agrimensura', abreviacion: 'FCEIA' },
-  { nombre: 'Ciencias Médicas', abreviacion: 'FCM' },
-  { nombre: 'Ciencia Política y RR. II.', abreviacion: 'FCPOLIT' },
-  { nombre: 'Ciencias Veterinarias', abreviacion: 'FVETER' },
-  { nombre: 'Derecho', abreviacion: 'FDER' },
-  { nombre: 'Humanidades y Artes', abreviacion: 'FHUMyAR' },
-  { nombre: 'Odontología', abreviacion: 'FODONTO' },
-  { nombre: 'Psicología', abreviacion: 'FPSICO' },
+  { nombre: 'Arquitectura, Urbanismo y Diseño', abreviacion: 'FAUD' },
+  { nombre: 'Facultad de Ciencias Agrarias', abreviacion: 'FCA' },
+  { nombre: 'Facultad de Ciencias de la Salud y Trabajo Social', abreviacion: 'FCSYTS' },
+  { nombre: 'Facultad de Ciencias Económicas y Sociales', abreviacion: 'FCEyS' },
+  { nombre: ' Facultad de Ciencias Exactas y Naturales', abreviacion: 'FCEyN' },
+  { nombre: 'Facultad de Derecho', abreviacion: 'FD' },
+  { nombre: 'Facultad de Humanidades', abreviacion: 'FH' },
+  { nombre: 'Facultad de Ingeniería', abreviacion: 'Fi' },
+  { nombre: 'Facultad de Psicologia', abreviacion: 'F.PSICO' },
+  { nombre: 'Escuela Superior de Medicina', abreviacion: 'ESM' },
+  { nombre: 'Colegio Nacional Arturo Illia', abreviacion: 'CNAI' },
 ]
 const claustros = [
   { nombre: 'Estudiantes' },

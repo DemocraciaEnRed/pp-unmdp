@@ -5,6 +5,7 @@
 nav.navbar
   box-shadow 1px 1px 1px -1px rgba(#000, .175)
   padding: 0 0 0 32px
+
   @media screen and (max-width: 500px)
     padding: 0 0 0 15px
   display: flex
@@ -25,15 +26,17 @@ nav.navbar
     .logo-mobile
       height: 30px
   a
-    color: #990070
-    text-transform: uppercase
-    font-weight: bold
+    color: principal-color
+    font-weight:500
   .navbar-nav
     font-size: 17px
     display: flex
     align-items center
     margin-right: 0
     margin-top: 0
+    height: 80px
+    @media (max-width : 500px)
+      height: 60px
     .user-badge
       .user-badge-link
         margin: 0
@@ -45,24 +48,30 @@ nav.navbar
         color inherit
         span.icon-bell
           font-size: 24px
-          color: #990070
+          color: principal-color
           @media screen and (min-width: 975px)
             font-weight: bold
   .header-item
     height: 80px;
-    padding: 0 20px;
+    padding: 0 5px;
     @media screen and (max-width: 500px)
+      height: 40px;
       padding: 0 13px;
     font-weight: bold
     display: flex;
     align-items: center;
     &:hover, &.active
-      background-color: #990070
       .header-link
+        background-color: principal-color
         color: white
+    &:focus
+      .header-link
+        width: 100%
     .header-link
       height: auto
       position: relative
+      padding: 7px 20px;
+      border-radius: 50px;
   .user-badge-helper
     margin-left 10px
 

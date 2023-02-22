@@ -5,9 +5,9 @@ export default function BannerForoVecinal (props) {
   let { adminTexts } = config.store
   return (
     <section className='container-fluid banner-fv'>
-      <div className='violet-background'></div>
+     
       <div className='banner'>
-      { window.innerWidth >= 630 && (
+      { 
         Math.random(1) > 0.5 ? (
           <video playsInline autoPlay muted loop>
             <source src={ adminTexts && adminTexts['home-video1-mp4'] }  type='video/mp4' />
@@ -19,7 +19,7 @@ export default function BannerForoVecinal (props) {
             <source src={ adminTexts && adminTexts['home-video2-webm'] } type='video/webm' />
           </video>
         )
-      )}
+      }
 
       </div>
       <div className='contenedor'>

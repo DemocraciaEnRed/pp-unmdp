@@ -39,7 +39,7 @@ class MobileMenu extends Component {
                   <Link
                     to='/s/acerca-de'
                     className='header-link'
-                    activeStyle={{ color: '#8C1E81' }}
+                    activeStyle={{ color: '#fff', backgroundColor: '#272727' }}
                     onClick={this.props.toggleOnClick}
                     tabIndex="2"
                     >
@@ -50,17 +50,17 @@ class MobileMenu extends Component {
                   <Link
                     to='/propuestas'
                     className={`header-link ${!~window.location.pathname.includes('propuesta') ? 'active' : ''}`}
-                    activeStyle={{ color: '#8C1E81' }}
+                    activeStyle={{ color: '#fff', backgroundColor: '#272727' }}
                     onClick={this.props.toggleOnClick}
                     tabIndex="3">
-                    UNR DECIDE
+                    Proyectos Y Propuestas
                   </Link>
                 </div>
                 <div className='header-item'>
                   <Link
                     to='s/foro-presencial'
                     className={`header-link ${!~window.location.pathname.includes('foro-presencial') ? 'active' : ''}`}
-                    activeStyle={{ color: '#8C1E81' }}
+                    activeStyle={{ color: '#fff', backgroundColor: '#272727' }}
                     onClick={this.props.toggleOnClick}
                     tabIndex="4">
                     Votación Presencial

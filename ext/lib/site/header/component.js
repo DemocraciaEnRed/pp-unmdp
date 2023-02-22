@@ -99,7 +99,7 @@ class Header extends Component {
             tabIndex="1"
             >
             <img
-              src={config.logo}
+              src={config.logoMobile}
               className='d-inline-block align-top'
               height='30'
               alt="UNR Presupuesto participativo"
@@ -152,7 +152,15 @@ class Header extends Component {
           </Link>
 
           <ul className='nav navbar-nav'>
-
+          <div className={`header-item ${window.location.pathname.includes('/propuestas') ? 'active' : ''}`}>
+              <Link
+                to='/propuestas'
+                className='header-link'
+                tabIndex="3"
+                >
+                  Proyectos Y Propuestas
+              </Link>
+            </div>
             <div className={`header-item ${window.location.pathname.includes('/acerca-de') ? 'active' : ''}`}>
               <Link
                 to='/s/acerca-de'
@@ -162,24 +170,15 @@ class Header extends Component {
                   Acerca de
               </Link>
             </div>
-            <div className={`header-item ${window.location.pathname.includes('/propuestas') ? 'active' : ''}`}>
-              <Link
-                to='/propuestas'
-                className='header-link'
-                tabIndex="3"
-                >
-                  UNR DECIDE
-              </Link>
-            </div>
-            {/* <div className={`header-item ${window.location.pathname.includes('/foro-presencial') ? 'active' : ''}`}>
+            {<div className={`header-item ${window.location.pathname.includes('/foro-presencial') ? 'active' : ''}`}>
               <Link
                 to='/s/foro-presencial'
                 className='header-link'
                 tabIndex="4"
                 >
-                  Votación Presencial
+                  Votación
               </Link>
-            </div> */}
+            </div>}
             { showAdmin &&
               <div className={`header-item ${window.location.pathname.includes('/admin') ? 'active' : ''}`}>
                 <Link

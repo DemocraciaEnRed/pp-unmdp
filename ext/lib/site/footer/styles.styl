@@ -1,6 +1,6 @@
 .footer-static
   font-family: 'Roboto', sans-serif
-  background-color: #4b3c59
+  background-color: principal-dark-color
   width: 100%
   font-size: 16px
   padding: 5%
@@ -51,12 +51,16 @@
     span
       color: #d8d8d8
       display: block
+      line-height: 1.5
+
 
     span:first-child
       color: white
       margin-bottom: 3%
       @media screen and (min-width: 500px)
         margin-bottom: 0
+    span:last-child
+      color: white
 
   .mapa-box
     @media screen and (min-width: 500px)
@@ -84,7 +88,7 @@
         margin-top: 40px
   .logos
     display: flex;
-    justify-content: space-between;
+    
     align-items: start;
     width: 100%;
     padding: 20px;
@@ -115,10 +119,10 @@
           margin: 30px auto
   .logo
     clear: both
-    width: 163px
+    width: 212px
     @media (max-width: 550px)
       margin: 30px auto
-    .logo-unr
+    .logo-unmdp
       display: block
       background-image: unquote("url('ext/lib/site/footer/logo-pp.png')")
       width: 100%

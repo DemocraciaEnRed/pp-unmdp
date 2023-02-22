@@ -5,6 +5,8 @@ import Jump from 'ext/lib/site/jump-button/component'
 import Anchor from 'ext/lib/site/anchor'
 // https://github.com/glennflanagan/react-responsive-accordion
 import Accordion from 'react-responsive-accordion';
+import config from 'lib/config'
+
 
 export default class Page extends Component {
   constructor (props) {
@@ -27,17 +29,18 @@ export default class Page extends Component {
     let { openSection } = this.state
     return (
       <div>
-        <section className="banner-static-2022">
+        <section className="banner-static-2022 about">
           <h1>Acerca de</h1>
         </section>
         <div className="post-banner-static-2022 container">
-          <span>Inscribirte para a sumarte como proyectista de la Comisión Universitaria este 2022.</span>
+          <div className='banner'></div>
+          <span>Inscribirte para a sumarte como proyectista de la Comisión Universitaria este {config.currentEdition}.</span>
         </div>
         <Anchor id='container'>
           <div className="container">
           <div className="">
               <div className="">
-                <p className='h4 text-center'>Podés leer el reglamento completo haciendo click <a href="https://presupuestoparticipativo.unr.edu.ar/reglamento/" rel="noopener noreferer" target="_blank">aquí</a></p>
+                <p className='h4 text-center'>Podés leer el reglamento completo haciendo click <a href="/s/reglamento/" rel="noopener noreferer" target="_blank">aquí</a></p>
                 <br />
                 <br />
                 <Accordion startPosition={openSection}>
