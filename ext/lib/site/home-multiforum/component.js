@@ -51,7 +51,7 @@ export default class HomeMultiforumOverride extends Component {
           {/* <div className="banner-ideas">
             <img src="/ext/lib/site/home-multiforum/icon-idea.svg" alt="Ideas"/>
             <p>Conocé <strong>los proyectos </strong>que podés votar para que sean realidad en el 2022. <strong>¡Elegí hasta tres proyectos y votá!</strong>. Podés conocerlas aquí.</p>
-            <Link to={'/propuestas'} className="boton-foro" href="">Ir a UNR DECIDE</Link>
+            <Link to={'/propuestas'} className="boton-foro" href="">Ir a UNMDP DECIDE</Link>
           </div> */}
           {/* <Barrios /> */}
           <BannerWelcome />

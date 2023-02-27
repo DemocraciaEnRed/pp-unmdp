@@ -46,7 +46,7 @@ const Footer = (props) => {
             </div>
           </a>
           <div className='logo ml-3'>
-            <a className='logo-unmdp' href='https://www.mdp.edu.ar/' aria-name="Link a pagina universidad nacional de rosario" rel="noopener noreferer" target="_blank" />
+            <a className='logo-unmdp' href='https://www.mdp.edu.ar/' aria-name="Link a pagina universidad nacional de mar del plata" rel="noopener noreferer" target="_blank" />
           </div>
 {/*           <div className="logo-access">
             <img src="/ext/lib/site/footer/accesibility-logo.png" alt="Logo accesibilidad universal"/>
@@ -61,7 +61,7 @@ const Footer = (props) => {
         <div className='terminos'>
           <Link to='/s/terminos-y-condiciones' tabIndex="13"> Términos y condiciones
           </Link>
-          <a href="/reglamento" tabIndex="14" rel="noopener noreferer" target="_blank"> Reglamento
+          <a href="/s/reglamento" tabIndex="14" rel="noopener noreferer" target="_blank"> Reglamento
           </a>
         </div>
       </div>

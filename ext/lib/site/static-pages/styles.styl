@@ -959,7 +959,7 @@ h3.underline
 
 #foro-presencial
   .the-banner
-    background-color: #8C1E81;
+    background-color: principal-light-color;
     padding: 50px 0;
     color: #FFF;
     font-size: 50px;
@@ -1088,8 +1088,15 @@ h3.underline
     background-repeat: no-repeat;
     padding: 0;
   &.about
-    background-image: unquote("url('/ext/lib/site/home-multiforum/bg-mundo.png')");
+    background-image: unquote("url('ext/lib/site/static-pages/acerca-de.jpg')");
     background-size: cover;
+    background-position: center
+    h1
+      background: principal-color
+      color: white
+      margin: auto
+      display: initial
+      padding: 20px 40px
 .post-banner-static-2022
   width: 50%
   padding: 15px 38px;
@@ -1099,3 +1106,23 @@ h3.underline
   text-align: center;
   font-weight: 700;
   color: #FFF;
+  font-size: 20px
+  @media(max-width:767px)
+    width: 80%
+    padding: 15px;
+    font-size: 16px
+
+
+
+.item-tyc
+  display: flex
+  strong
+    margin-right: 16px
+  .strong
+    font-weight: 600
+
+.tyc
+  br
+    content: " ";
+    display: block;
+    margin-bottom: 16px;

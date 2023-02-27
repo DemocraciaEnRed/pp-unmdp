@@ -181,9 +181,9 @@ class TopicArticle extends Component {
           <div className="panel panel-default pre-info" style={{borderLeftColor: topic.tag.color }}>
             <div className="panel-body">
               {/* { !isProyecto && <div><b>Creado por</b><br />{topic.owner.firstName}</div> } */}
-              <div><b>Tema</b><br /><div className="tema" style={{backgroundColor: topic.tag.color }}>{ topic.tag.name }</div></div>
-              <div><b>Autor/es/as</b><br />{ topic.owner.firstName + ' ' + topic.owner.lastName}</div>
-              <div><b>facultad</b><br />{ topic.owner.facultad.nombre}</div>
+              <div className='grid-panel'><b>Tema</b><br /><div className="tema" style={{backgroundColor: topic.tag.color }}>{ topic.tag.name }</div></div>
+              <div className='grid-panel'><b>Autor/es/as</b><br />{ topic.owner.firstName + ' ' + topic.owner.lastName}</div>
+              {topic.owner.facultad && <div className='grid-panel'><b>facultad</b><br />{ topic.owner.facultad.nombre}</div>}
               {isProyecto && <div><b>Monto estimado</b><br />${topic.attrs.presupuesto.toLocaleString()}</div>}
               </div>
           </div>
@@ -241,7 +241,7 @@ class TopicArticle extends Component {
                 {topic.attrs['admin-comment-referencia'] && topic.attrs['admin-comment-referencia'] !== '' &&
                   <p className='admin-comment-referido'>Podés ver las ideas sistematizadas <a className='admin-comment-referido' href={topic.attrs['admin-comment-referencia']}>aquí</a>.</p>
                 }
-                <p className='font-weight-bold'>Equipo de Coordinación y Gestión PPUNR</p>
+                <p className='font-weight-bold'>Equipo de Coordinación y Gestión PPMDP</p>
               </div>
             )
         } */}

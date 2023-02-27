@@ -45,6 +45,7 @@ export default function ThumbsVoto(props) {
     slider.style.translate = pos + '%'
   }
 
+  window.addEventListener('resize', ()=>{if(window.innerWidth > 767) document.getElementById('slider').style.translate=0+'%' });
 
   return (
     <section className="thumbs info-landing">

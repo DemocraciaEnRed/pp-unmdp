@@ -17,9 +17,7 @@ export default class Page extends Component {
     }
   }
 
-  componentDidMount () {
-    this.goTop(this.props.location.query.q || 'container')
-  }
+
 
   goTop (anchorId) {
     Anchor.goTo(anchorId)
@@ -33,7 +31,6 @@ export default class Page extends Component {
           <h1>Acerca de</h1>
         </section>
         <div className="post-banner-static-2022 container">
-          <div className='banner'></div>
           <span>Inscribirte para a sumarte como proyectista de la Comisión Universitaria este {config.currentEdition}.</span>
         </div>
         <Anchor id='container'>
@@ -46,10 +43,10 @@ export default class Page extends Component {
                 <Accordion startPosition={openSection}>
                   <div data-trigger="+ ¿Quiénes pueden participar del PP Facultades?">
                     <p className='p-padding'>
-                      Pueden participar docentes, nodocentes, estudiantes y graduados/as de las 12 Facultades y otras Sedes y dependencias de la UNR.
+                      Pueden participar docentes, nodocentes, estudiantes y graduados/as de las 12 Facultades y otras Sedes y dependencias de la UNMDP.
                     </p>
                   </div>
-                  {/* <div data-trigger="+ ¿En qué se basa la etapa de Foro del PPUNR?">
+                  {/* <div data-trigger="+ ¿En qué se basa la etapa de Foro del PPMDP?">
                     <p className='p-padding'>
                     El Foro tiene por objetivo que los/as integrantes de la comunidad propongan ideas que aporten en la construcción de la Universidad que queremos. Estará abierto desde el 10 de Mayo al 24 de Mayo.        También podrás en esta instancia sumarte como proyectista.
                     </p>
@@ -85,7 +82,7 @@ export default class Page extends Component {
                       <li>Tecnologías e innovación</li>
                     </ul>
                     <p className='p-padding'>
-                    Sólo podrás elegir una, la que te parezca define más y mejor tu idea. La misma luego será retomada por el área temática respectiva dentro de la Comisión Universitaria, pudiendo ser reasignada por parte del equipo el PPUNR.
+                    Sólo podrás elegir una, la que te parezca define más y mejor tu idea. La misma luego será retomada por el área temática respectiva dentro de la Comisión Universitaria, pudiendo ser reasignada por parte del equipo el PPMDP.
                     </p>
                   </div>
                   <div data-trigger="+ ¿Cómo subo una idea?">
@@ -95,7 +92,7 @@ export default class Page extends Component {
                   </div>
                   <div data-trigger="+ ¿Qué pasa si no puedo registrarme?">
                     <p className='p-padding'>
-                    Te invitamos a que nos mandes un correo con todos tus datos (nombre completo, DNI, Facultad, claustro, mail o forma de contacto) a <a href="mailto:presupuestoparticipativo@unr.edu.ar">presupuestoparticipativo@unr.edu.ar</a>
+                    Te invitamos a que nos mandes un correo con todos tus datos (nombre completo, DNI, Facultad, claustro, mail o forma de contacto) a <a href="mailto:presupuestoparticipativo@unmdp.edu.ar">presupuestoparticipativo@unmdp.edu.ar</a>
                     </p>
                   </div>
                   <div data-trigger="+ ¿Cuántas ideas puedo subir?">
@@ -147,22 +144,22 @@ export default class Page extends Component {
                   </div>
                   <div data-trigger="+ ¿Qué espacios podemos intervenir con proyectos del PP?">
                     <p className='p-padding'>
-                    Cualquier espacio de la UNR.  El proyecto tiene que incluir resultados para al menos tres unidades académicas o bien para algún espacio común de la Universidad (comedores, gimnasios, Sede, Rectorado, CUR, anexo, etc.).
+                    Cualquier espacio de la UNMDP.  El proyecto tiene que incluir resultados para al menos tres unidades académicas o bien para algún espacio común de la Universidad (comedores, gimnasios, Sede, Rectorado, CUR, anexo, etc.).
                     </p>
                   </div>
-                  <div data-trigger="+ ¿Cuál es el monto asignado al PPUNR edición 2022?">
+                  <div data-trigger="+ ¿Cuál es el monto asignado al PPMDP edición 2022?">
                     <p className='p-padding'>
                     25 millones de pesos, de los cuales, cada Escuela tendrá disponible un  millón y medio para discutir en el marco de su comunidad, y el resto, $20.500.000, estarán destinados al PP Facultades.
                     </p>
                   </div>
                   <div data-trigger="+ ¿Cómo elegiremos los proyectos a ejecutarse en 2023?">
                     <p className='p-padding'>
-                    Se realizarán jornadas de votación (del 12 al 21 de octubre de 2022) previa difusión de los proyectos elegibles, para que toda la comunidad de la UNR pueda decidir cuáles serán ejecutados hasta alcanzar el total de la partida presupuestaria afectada al PP Facultades. Como ningún proyecto puede superar el 70% de la partida, al menos dos proyectos serán ganadores.
+                    Se realizarán jornadas de votación (del 12 al 21 de octubre de 2022) previa difusión de los proyectos elegibles, para que toda la comunidad de la UNMDP pueda decidir cuáles serán ejecutados hasta alcanzar el total de la partida presupuestaria afectada al PP Facultades. Como ningún proyecto puede superar el 70% de la partida, al menos dos proyectos serán ganadores.
                     </p>
                   </div>
-                  <div data-trigger="+ Puedo participar si pertenezco a las Sedes, Gimnasio UNR, ECU, comedores y otras dependencias?">
+                  <div data-trigger="+ Puedo participar si pertenezco a las Sedes, Gimnasio UNMDP, ECU, comedores y otras dependencias?">
                     <p className='p-padding'>
-                    Si, claro! todos/as los/as actores de la comunidad UNR están invitados a participar. En el campo Facultad del formulario de registro, encontrás la opción “Otras Sedes y Dependencias UNR” para vincularte.
+                    Si, claro! todos/as los/as actores de la comunidad UNMDP están invitados a participar. En el campo Facultad del formulario de registro, encontrás la opción “Otras Sedes y Dependencias MDP” para vincularte.
                     </p>
                   </div>
                   <div data-trigger="+ ¿Pueden participar los/las estudiantes de posgrado?">

@@ -109,7 +109,7 @@ export class TopicCard extends Component {
 
           {/* {!isProyecto && (isSistematizada || isIdeaProyecto ?
             <div className='topic-creation'>
-              <span>Creado por: <span className='topic-card-author'>PPUNR</span></span>
+              <span>Creado por: <span className='topic-card-author'>PPMDP</span></span>
             </div>
             :
             <div className='topic-creation'>

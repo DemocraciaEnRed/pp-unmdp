@@ -152,6 +152,15 @@ class Header extends Component {
           </Link>
 
           <ul className='nav navbar-nav'>
+          <div className={`header-item ${window.location.pathname === config.homeLink ? 'active' : ''}`}>
+              <Link
+                to={config.homeLink}
+                className='header-link'
+                tabIndex="4"
+                >
+                  Inicio
+              </Link>
+            </div>
           <div className={`header-item ${window.location.pathname.includes('/propuestas') ? 'active' : ''}`}>
               <Link
                 to='/propuestas'
@@ -170,7 +179,7 @@ class Header extends Component {
                   Acerca de
               </Link>
             </div>
-            {<div className={`header-item ${window.location.pathname.includes('/foro-presencial') ? 'active' : ''}`}>
+            {/* <div className={`header-item ${window.location.pathname.includes('/foro-presencial') ? 'active' : ''}`}>
               <Link
                 to='/s/foro-presencial'
                 className='header-link'
@@ -178,7 +187,7 @@ class Header extends Component {
                 >
                   Votación
               </Link>
-            </div>}
+            </div> */}
             { showAdmin &&
               <div className={`header-item ${window.location.pathname.includes('/admin') ? 'active' : ''}`}>
                 <Link

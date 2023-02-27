@@ -33,7 +33,7 @@ const defaultValues = {
   tag: [],
   // 'barrio' o 'newest' o 'popular'
   sort: 'newest',
-  tipoIdea: config.votacionVisible ? ['proyecto'] : (config.propuestasVisibles ? ['pendiente'] : [])
+  tipoIdea:['proyecto','pendiente']
 }
 
 const filters = {
@@ -462,7 +462,7 @@ class HomePropuestas extends Component {
           open>
           <span onClick={this.handlerVotacion}>&times;</span>
           <p className='intro text-center'>* Módulo de votación presencial, para administradores</p>
-          <h4 className='text-center'>Bienvenida/o a la votación de PPUNR 2022</h4>
+          <h4 className='text-center'>Bienvenida/o a la votación de PPMDP 2022</h4>
           <h5 className='text-center'>Ingrese los datos del Votante</h5>
           <label htmlFor='dniP'>DNI</label>
           <input id='dniP' type='text' name='dniP' className='form-control' onChange={(e) => this.setState({ dniP: e.target.value })} />
