@@ -15,7 +15,7 @@ class BannerWelcome extends Component {
     return (
       <div id='bannerwelcome' className='banner-welcome'>
         <img src={config.propuestasAbiertas ? '/ext/lib/site/banner-welcome/vector.png' : '/ext/lib/site/banner-welcome/handlewithcare.png'} className="image-large" alt="Icono proyectistas"/>
-        <p className="title">{config.propuestasAbiertas ? '¡La subida de ideas esta abierta!': '¡Próximamente se abrirá el formulario de subida de ideas!'}</p>
+        <p className="title">{config.propuestasAbiertas ? '¡La subida de ideas está abierta!': '¡Próximamente se abrirá el formulario de subida de ideas!'}</p>
         <p className="subtitle">{
         config.votacionAbierta ? 'Podés votar hasta 3 proyectos' : 
         config.propuestasAbiertas ? 'Te invitamos a compartir tus ideas para mejorar la Universidad y a conocer las ideas de tus Compañeros/as':

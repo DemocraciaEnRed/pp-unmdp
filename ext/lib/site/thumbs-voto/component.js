@@ -139,7 +139,7 @@ export default function ThumbsVoto(props) {
         {/*
         <div className='row'>
           <div className='cont-boton-azul'>
-            <Link to='https://presupuestoparticipativo.unr.edu.ar/como-participo/' className="boton-azul">
+            <Link to='https://presupuestoparticipativo.unmdp.edu.ar/como-participo/' className="boton-azul">
               ¿Como participo?
             </Link>
           </div>

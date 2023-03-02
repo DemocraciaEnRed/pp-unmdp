@@ -102,7 +102,7 @@ class Header extends Component {
               src={config.logoMobile}
               className='d-inline-block align-top'
               height='30'
-              alt="UNR Presupuesto participativo"
+              alt="UNMDP Presupuesto participativo"
               />
           </Link>
 

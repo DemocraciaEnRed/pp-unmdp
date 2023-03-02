@@ -56,6 +56,12 @@ class FormularioPropuesta extends Component {
     this.setState({ [name]: value })
   }
 
+  componentDidMount () {
+    window.scrollTo(0, 0)
+  }
+
+  
+
   componentWillMount () {
     const isEdit = this.props.params.id ? true : false
 
@@ -105,7 +111,7 @@ class FormularioPropuesta extends Component {
           topic: topic
         })
 
-      console.log(isEdit, newState)
+      //console.log(isEdit, newState)
       this.setState(newState, () => {
         // updateamos campos de usuario
         // (recién dps del setState tendremos facultades y claustros cargados)
