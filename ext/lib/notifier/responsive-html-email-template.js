@@ -378,7 +378,7 @@ module.exports = ({
                         <td class="align-center">
                           <p>
                             <span style="color:#0A1D8B">PRESUPUESTO PARTICIPATIVO DE LA UNIVERSIDAD NACIONAL DE MAR DEL PLATA</span>
-                            <br> <span style="color:#005e80">#PPMDP #LaUniversidadQueQueremos</span>
+                            <br> <span style="color:#005e80">#PPUNMDP #LaUniversidadQueQueremos</span>
                           </p>
                           <!-- When inserting images remember to include the following attributes or
                           risk them breaking in different clients: src, alt, width, height, border -->

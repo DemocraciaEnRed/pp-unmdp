@@ -4,7 +4,7 @@ const Text = require('lib/models').Text
 
 const textsData = [
 	{ "name": "home-subtitle", "text": "¡Accedé a las ideas!" },
-	{ "name": "home-subtitle-text", "text": "Con PPUNDMP vas a poder presentar las ideas que la Universidad necesita para que entre todos podamos mejorarla." },
+	{ "name": "home-subtitle-text", "text": "Con PPUNMDP vas a poder presentar las ideas que la Universidad necesita para que entre todos podamos mejorarla." },
 	{ "name": "home-video1-mp4", "text": "https://cldup.com/pQZlAEpzw0.mp4" },
 	{ "name": "home-video1-webm", "text": "https://cldup.com/b5-PScfd-V.webm" },
 	{ "name": "home-video2-mp4", "text": "https://cldup.com/w4RSGFJStA.mp4" },

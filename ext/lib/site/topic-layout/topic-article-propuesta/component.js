@@ -241,7 +241,7 @@ class TopicArticle extends Component {
                 {topic.attrs['admin-comment-referencia'] && topic.attrs['admin-comment-referencia'] !== '' &&
                   <p className='admin-comment-referido'>Podés ver las ideas sistematizadas <a className='admin-comment-referido' href={topic.attrs['admin-comment-referencia']}>aquí</a>.</p>
                 }
-                <p className='font-weight-bold'>Equipo de Coordinación y Gestión PPMDP</p>
+                <p className='font-weight-bold'>Equipo de Coordinación y Gestión PPUNMDP</p>
               </div>
             )
         } */}
