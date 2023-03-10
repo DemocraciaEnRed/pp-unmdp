@@ -6,12 +6,15 @@ const Tag = models.Tag
 const Eje = models.Eje
 
 const ejes = [
-  { nombre: 'Bienestar Universitario', color: '#DCAAC5', hash: 'bienestar-universitario' },
-  { nombre: 'Deporte y cultura', color: '#EFA47E', hash: 'deporte-cultura' },
-  { nombre: 'Espacio Comunes', color: '#EDC200', hash: 'espacios-comunes' },
-  { nombre: 'Ambiente y sustentabilidad', color: '#5DBE6B', hash: 'ambiente-sustentabilidad' },
-  { nombre: 'Tecnologias e innovación', color: '#50A0C6', hash: 'tecnologia-innovacion' }
+  { nombre: 'Equidad de Género', color: '#B751C8', hash: 'equidad-de-genero' },
+  { nombre: 'Diversidad', color: '#F9B678', hash: 'diversidad' },
+  { nombre: 'Interculturalidad', color: '#A7A94D', hash: 'interculturalidad' },
+  { nombre: 'Accesibilidad', color: '#FF5353', hash: 'accesibilidad' },
+  { nombre: 'Sostenibilidad', color: '#33CC99', hash: 'sostenibilidad' },
+  { nombre: 'Innovación', color: '#9E9CFB', hash: 'innovacion' },
+  { nombre: 'Salud', color: '#83D2FF', hash: 'salud' }
 ]
+
 
 const tags = ejes.map(eje => {
   return {

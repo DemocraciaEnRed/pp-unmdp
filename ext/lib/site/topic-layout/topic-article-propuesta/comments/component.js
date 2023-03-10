@@ -28,7 +28,7 @@ export class Comments extends Component {
   render () {
     const { commentsFetch } = this.props
 
-    const enabled = config.habilitarComentarios
+    const enabled = true //config.habilitarComentarios
 
     return (
       <div className='topic-comments'>

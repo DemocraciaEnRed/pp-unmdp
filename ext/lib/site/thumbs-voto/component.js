@@ -23,24 +23,48 @@ export default function ThumbsVoto(props) {
     }
   } catch (e) {}
 
+  const handleSlider = (event) =>{
+    const slider = document.getElementById('slider')
+    let side = event.target.className.split('-').at(-1);
+    let pos = Number(slider.style.translate.replace('%',''))
+    if (side==='right'){
+      if (pos != -66)pos -= 33
+      else pos = 0
+    }
+    if (side==='left'){
+      if (pos != 0)pos += 33
+      else pos = -66
+    }
+    const indicator = document.getElementsByClassName('indicator')
+    indicator.forEach(element => {
+      element.classList.remove('active')
+      if(pos===0)indicator[0].classList.add('active')
+      if(pos===-33)indicator[1].classList.add('active')
+      if(pos===-66)indicator[2].classList.add('active')
+    });
+    slider.style.translate = pos + '%'
+  }
+
+  window.addEventListener('resize', ()=>{if(window.innerWidth > 767) document.getElementById('slider').style.translate=0+'%' });
+
   return (
     <section className="thumbs info-landing">
       <div className="container-fluid">
-        <div className="row cont fondo-violeta">
+        <div className="row cont">
           <div className="subtitulo">
             { subtitleUrl ?
               <h2 dangerouslySetInnerHTML={{__html: subtitle}} />
               :
-              <h2>
+              <h1>
                 <a tabIndex="20" href={config.propuestasAbiertas ? '/formulario-idea' : '/propuestas'}>{ subtitle }</a>
-              </h2>
+              </h1>
             }
             {/*<h3>Hasta el 31 de mayo inclusive tenés tiempo para presentar tus propuestas</h3> */}
             <div className="container">
               <h3>{ props.texts['home-subtitle-text'] }</h3>
             </div>
             {
-              config.propuestasAbiertas && config.propuestasVisibles &&
+              /* config.propuestasAbiertas && config.propuestasVisibles &&
               <div className="row btn-container-home">
                 <div className="col-md-3">
                   <Link
@@ -49,18 +73,21 @@ export default function ThumbsVoto(props) {
                     Subí tu idea
                   </Link>
                 </div>
-                {/* <div className="col-md-3">
+                <div className="col-md-3">
                   <Link
                     to='/propuestas'
                     className="boton-mandar-idea">
                     Ver Proyectos
                   </Link>
-                </div> */}
-              </div>
+                </div>
+              </div> */
             }
           </div>
         </div>
-        <div className="row cont">
+        <div>
+
+        <div className="row cont" id="slider"  >
+          
           <div className="col-md-4">
             <div
               className="que-son img-responsive"
@@ -99,12 +126,20 @@ export default function ThumbsVoto(props) {
               {props.texts['home-icono3-texto']}
             </p>
           </div>
+        </div>
+            <span onClick={handleSlider} className='arrows glyphicon glyphicon-chevron-right'/>
+            <span onClick={handleSlider} className='arrows glyphicon glyphicon-chevron-left'/>
+            <span className='indicators'>
+              <span className='indicator active'></span> 
+              <span className='indicator'></span>
+              <span className='indicator'></span>
 
+            </span>
         </div>
         {/*
         <div className='row'>
           <div className='cont-boton-azul'>
-            <Link to='https://presupuestoparticipativo.unr.edu.ar/como-participo/' className="boton-azul">
+            <Link to='https://presupuestoparticipativo.unmdp.edu.ar/como-participo/' className="boton-azul">
               ¿Como participo?
             </Link>
           </div>

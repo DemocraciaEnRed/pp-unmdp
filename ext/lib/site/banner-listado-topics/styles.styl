@@ -1,16 +1,15 @@
 header.banner-proyectos
   width: 100%
   height: auto;
-  padding: 110px 0px 60px;
   display: flex
   flex-wrap: wrap
   flex-direction: column
   justify-content: center
   align-items: center
-  background: linear-gradient(90deg, rgba(140,3,117,1) 0%, rgba(140,3,117,1) 35%, rgba(191,69,136,1) 100%);
-  background-image: url(/ext/lib/site/home-propuestas/innovacion.jpg);
+  background: linear-gradient(90deg, rgba(0, 166, 203, 0.5) 50%, rgba(0, 166, 203, 0.5) 100%);
+  background-image: url(/ext/lib/site/home-propuestas/innovacion.png);
   background-size: cover;
-  background-position: bottom
+  background-position: center
   text-align: center
   color: #FFF
   button.iniciar-votacion
@@ -18,16 +17,18 @@ header.banner-proyectos
     width: 307px;
     height: 55px;
 
-    background: #BF4588;
+    background: principal-color;
     border-radius: 5px;
 
   .proyectos-title
-    font-family: 'Roboto', sans-serif
+    font-family: 'Roboto', sans-serif!important
     font-size: 40px
     @media screen and (max-width: 570px)
       font-size: 25px
     font-weight: 600
     margin: 0
+    padding: 20px 40px
+    background: principal-color;
 
   .proyectos-subtitle
     font-family: 'Roboto', sans-serif
@@ -44,8 +45,10 @@ header.banner-proyectos
     color: white;
     text-align: center;
     margin-top: 30px;
-    box-shadow: 0 4px 4px 0 rgba(255, 255, 255, 0.25);
-    background-color: #990070;
+    //box-shadow: 0 4px 4px 0 rgba(255, 255, 255, 0.25);
+    background-color: principal-color;
+    padding: 10px 30px
+    border-radius: 50px
     &:hover,&:focus
       color:white
     &:focus
@@ -60,7 +63,7 @@ header.banner-votos
   flex-direction: column
   justify-content: center
   align-items: center
-  background-color: #6e025c
+  background-color: principal-color
   background-position: bottom
   text-align: center
   color: #FFF

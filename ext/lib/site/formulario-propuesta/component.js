@@ -56,6 +56,12 @@ class FormularioPropuesta extends Component {
     this.setState({ [name]: value })
   }
 
+  componentDidMount () {
+    window.scrollTo(0, 0)
+  }
+
+  
+
   componentWillMount () {
     const isEdit = this.props.params.id ? true : false
 
@@ -105,7 +111,7 @@ class FormularioPropuesta extends Component {
           topic: topic
         })
 
-      console.log(isEdit, newState)
+      //console.log(isEdit, newState)
       this.setState(newState, () => {
         // updateamos campos de usuario
         // (recién dps del setState tendremos facultades y claustros cargados)
@@ -319,6 +325,7 @@ class FormularioPropuesta extends Component {
           }
         </div>
         {/* FORMULARIO GOES BEHIND THIS */}
+        <hr/>
         <form className='wrapper' onSubmit={this.handleSubmit}>
           <div className="bar-section">
             <p className="section-title">Tus datos</p>
@@ -551,7 +558,7 @@ class FormularioPropuesta extends Component {
     } return (
       <div className='form-propuesta'>
         <div className='propuesta-header'>
-          <h1 className='text-center'>PRESUPUESTO PARTICIPATIVO UNR</h1>
+          <h1 className='text-center'>PRESUPUESTO PARTICIPATIVO UNMDP</h1>
           {/* <p>¡Acá vas a poder subir tu propuesta para el presupuesto participativo!</p> */}
           <p>¡Gracias a todos y todas por participar!</p>
         </div>

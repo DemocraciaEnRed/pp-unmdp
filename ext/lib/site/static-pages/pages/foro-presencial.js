@@ -46,7 +46,7 @@ class Page extends Component {
         // add an hour to event.fechaInicio
         event.fechaFin = new Date(`${event.fecha}T${event.hora}:00-0300`)
         event.fechaFin.setHours(event.fechaFin.getHours() + 1)
-        event.calendarURL = `https://www.google.com/calendar/render?action=TEMPLATE&text=PP+UNR%3A+Foro+presencial+-+${event.nombre}&details=Te+invitamos+a+ser+parte+del+foro+para+sumar+tu+idea&location=${event.lugar}&dates=${event.fechaInicio.toISOString().replaceAll('-','').replaceAll(':','').replaceAll('.000','')}%2F${event.fechaFin.toISOString().replaceAll('-','').replaceAll(':','').replaceAll('.000','')}`
+        event.calendarURL = `https://www.google.com/calendar/render?action=TEMPLATE&text=PP+UNMDP%3A+Foro+presencial+-+${event.nombre}&details=Te+invitamos+a+ser+parte+del+foro+para+sumar+tu+idea&location=${event.lugar}&dates=${event.fechaInicio.toISOString().replaceAll('-','').replaceAll(':','').replaceAll('.000','')}%2F${event.fechaFin.toISOString().replaceAll('-','').replaceAll(':','').replaceAll('.000','')}`
       })
       let futureEvents = res.filter((item) => {
         let date = new Date(item.datetime)
@@ -115,7 +115,7 @@ class Page extends Component {
         </section>
         <div className="the-subbanner-container">
           <div className="the-subbanner container">
-            En estos puntos UNR Decide podrás votar de manera presencial. Te esperamos!
+            En estos puntos UNMDP Decide podrás votar de manera presencial. Te esperamos!
           </div>
         </div>
         <div className="the-content">

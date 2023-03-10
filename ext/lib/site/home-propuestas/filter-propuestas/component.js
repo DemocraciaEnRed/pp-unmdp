@@ -87,40 +87,42 @@ export default class FilterPropuestas extends Component {
     // - el .map(.find().name) hace la conversión de keys a values
     //   p.ej. barrio contiene keys, y para mostrar su formato para humanos hay
     //   que buscar la key dentro de barrios
-    /*if (facultad.length)
+    if (facultad.length)
       allActiveOpts.push(
         ...facultad.sort().map(i => ({ value: i, name: facultades.find(j => j.value==i).name }))
       )
     if (claustro.length)
       allActiveOpts.push(
         ...claustro.sort().map(i => ({ value: i, name: claustros.find(j => j.value==i).name }))
-      )*/
+      )
     if (tag.length && tags.length)
       allActiveOpts.push(
         ...tag.sort().map(i => ({ value: i, name: tags.find(j => j.value==i).name }))
       )
-    if (tipoIdea.length && tiposIdea.length)
+    /* if (tipoIdea.length && tiposIdea.length)
       allActiveOpts.push(
         ...tipoIdea.sort().map(i => ({ value: i, name: tiposIdea.find(j => j.value==i).name }))
-      )
+      ) */
 
     return (
       <nav id='filter-propuestas'>
         <div className='filters-nav center'>
-          {/* {<FilterBox
-            name='facultad'
-            title='Facultad'
-            allOptions={facultades}
-            activeOptions={facultad}
-            tabIndex="0"
+          {/* {} */}
+          
+          <FilterBox
+            name='tag'
+            title='Tema'
+            allOptions={tags}
+            activeOptions={tag}
+
             activeDropdown={this.state.activeDropdown}
             clearedFilters={this.state.clearedFilters}
             handleDropdown={this.handleDropdown}
             handleFilter={this.handleFilter}
             clearFilter={this.clearFilter}
-            />}
+            />
 
-          {<FilterBox
+          <FilterBox
             name='claustro'
             title='Claustro'
             allOptions={claustros}
@@ -131,7 +133,20 @@ export default class FilterPropuestas extends Component {
             handleDropdown={this.handleDropdown}
             handleFilter={this.handleFilter}
             clearFilter={this.clearFilter}
-            />} */}
+            />
+
+          <FilterBox
+            name='facultad'
+            title='Facultad'
+            allOptions={facultades}
+            activeOptions={facultad}
+            tabIndex="0"
+            activeDropdown={this.state.activeDropdown}
+            clearedFilters={this.state.clearedFilters}
+            handleDropdown={this.handleDropdown}
+            handleFilter={this.handleFilter}
+            clearFilter={this.clearFilter}
+            />
 
           {/* <FilterBox
             name='tipoIdea'
@@ -146,23 +161,11 @@ export default class FilterPropuestas extends Component {
             clearFilter={this.clearFilter}
             /> */}
 
-          <FilterBox
-            name='tag'
-            title='Tema'
-            allOptions={tags}
-            activeOptions={tag}
-
-            activeDropdown={this.state.activeDropdown}
-            clearedFilters={this.state.clearedFilters}
-            handleDropdown={this.handleDropdown}
-            handleFilter={this.handleFilter}
-            clearFilter={this.clearFilter}
-            />
         </div>
 
-        {/* {allActiveOpts.length != 0 &&
+        {allActiveOpts.length != 0 &&
           <Badges options={allActiveOpts} handleRemove={handleRemoveBadge} />
-        } */}
+        }
 
       </nav>
     )
