@@ -179,15 +179,15 @@ class Header extends Component {
                   Acerca de
               </Link>
             </div>
-            {/* <div className={`header-item ${window.location.pathname.includes('/foro-presencial') ? 'active' : ''}`}>
+            {<div className={`header-item ${window.location.pathname.includes('/foro-presencial') ? 'active' : ''}`}>
               <Link
                 to='/s/foro-presencial'
                 className='header-link'
                 tabIndex="4"
                 >
-                  Votación
+                  Eventos
               </Link>
-            </div> */}
+            </div>}
             { showAdmin &&
               <div className={`header-item ${window.location.pathname.includes('/admin') ? 'active' : ''}`}>
                 <Link
