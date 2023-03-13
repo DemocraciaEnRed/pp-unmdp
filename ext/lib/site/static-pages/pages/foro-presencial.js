@@ -111,7 +111,7 @@ class Page extends Component {
       <Anchor id='container-top'>
       <div id="foro-presencial">
         <section className="the-banner">
-          Votación Presencial
+        Eventos
         </section>
         <div className="the-subbanner-container">
           <div className="the-subbanner container">

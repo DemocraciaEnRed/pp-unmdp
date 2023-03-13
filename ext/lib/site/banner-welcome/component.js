@@ -35,7 +35,7 @@ class BannerWelcome extends Component {
           </Link>
           </div>
           {/* <div className="col-md-3">
-            <Link to={'/s/foro-presencial'} className="boton-foro-presencial" href="">Votación Presencial</Link>
+            <Link to={'/s/eventos'} className="boton-foro-presencial" href="">Votación Presencial</Link>
           </div> */}
         </div> : <div className="row">
           <div className="col-md-6 button-rounded" >

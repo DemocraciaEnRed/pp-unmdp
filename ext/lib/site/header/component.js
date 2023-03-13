@@ -179,9 +179,9 @@ class Header extends Component {
                   Acerca de
               </Link>
             </div>
-            {<div className={`header-item ${window.location.pathname.includes('/foro-presencial') ? 'active' : ''}`}>
+            {<div className={`header-item ${window.location.pathname.includes('/eventos') ? 'active' : ''}`}>
               <Link
-                to='/s/foro-presencial'
+                to='/s/eventos'
                 className='header-link'
                 tabIndex="4"
                 >

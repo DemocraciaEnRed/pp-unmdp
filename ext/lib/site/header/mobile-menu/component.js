@@ -56,16 +56,16 @@ class MobileMenu extends Component {
                     Proyectos Y Propuestas
                   </Link>
                 </div>
-                {/* <div className='header-item'>
+                <div className='header-item'>
                   <Link
-                    to='s/foro-presencial'
+                    to='s/eventos'
                     className={`header-link ${!~window.location.pathname.includes('foro-presencial') ? 'active' : ''}`}
                     activeStyle={{ color: '#fff', backgroundColor: '#272727' }}
                     onClick={this.props.toggleOnClick}
                     tabIndex="4">
-                    Votación Presencial
+                    Eventos
                   </Link>
-                </div> */}
+                </div>
                 {/* <div className='header-item mobile-link'>
                   <ProyectosLink />
                 </div>

@@ -15,6 +15,6 @@ router.childRoutes.unshift({
 })
 
 router.childRoutes.unshift({
-  path: 's/foro-presencial',
+  path: 's/eventos',
   component: ForoPresencial
 })
