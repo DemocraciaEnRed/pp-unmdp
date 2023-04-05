@@ -32,7 +32,7 @@ export default class AnonUser extends Component {
                className='header-link anon-user'
                onClick={this.props.toggleOnClick}
                tabIndex="4">
-               {t('header.signup')} <i className="icon-chevron-sign-right"></i>
+               {t('header.signup')} <i className="fas fa-chevron-right"></i>
              </Link>
            )
         }
@@ -49,7 +49,7 @@ export default class AnonUser extends Component {
                className='header-link anon-user'
                onClick={this.props.toggleOnClick}
                tabIndex="5">
-               {t('header.signin')} <i className="icon-signin"></i>
+               {t('header.signin')} <i className="fas fa-sign-in"></i>
              </Link>
            )
         }

@@ -39,29 +39,21 @@ const Footer = (props) => {
           <a className='social-mail' tabIndex="12"  href='mailto:webadmin@mdp.edu.ar' target="_blank"/>
         </div>
         <div className='logos'>
+          <a href='https://www.mdp.edu.ar/' aria-label="Link a pagina universidad nacional de mar del plata" target='_blank'><img src="/ext/lib/site/footer/logo-desktop.png" className='hidden-sm hidden-xs img-responsive logo-unmdp' alt="Logo universidad nacional de mar del plata"/></a>
+          <a href='https://www.mdp.edu.ar/' aria-label="Link a pagina universidad nacional de mar del plata" target='_blank'><img src="/ext/lib/site/footer/logo-mobile.png" className='hidden-md hidden-lg logo-unmdp' alt="Logo universidad nacional de mar del plata"/></a>
+        </div>
+        <div className='logos'>
           <a href="https://democraciaenred.org/" rel="noopener noreferer" target="_blank">
             <div className='logo-der'>
               <img src="/ext/lib/site/footer/logo-der.png" alt="Logo democracia en red"/>
               <span>Desarrollado por<br /><b>Democracia en red</b></span>
             </div>
           </a>
-          <div className='logo ml-3'>
-            <a className='logo-unmdp' href='https://www.mdp.edu.ar/' aria-label="Link a pagina universidad nacional de mar del plata" rel="noopener noreferer" target="_blank" />
-          </div>
-{/*           <div className="logo-access">
-            <img src="/ext/lib/site/footer/accesibility-logo.png" alt="Logo accesibilidad universal"/>
-          </div>
-          <div className='logo-flor'>
-            <img src="/ext/lib/site/footer/logo-flor.png" alt="Logo dibujante Flor Balestra"/>
-          </div>
-          <div className='logo-universidad'>
-            <img src="/ext/lib/site/footer/logo-universidad-que-queremos.png" alt="Logo la universidad que queremos"/>
-          </div> */}
         </div>
         <div className='terminos'>
-          <Link to='/s/terminos-y-condiciones' tabIndex="13"> Términos y condiciones
+          <Link to='/s/acerca-de' tabIndex="13"> Acerca de
           </Link>
-          <a href="/s/reglamento" tabIndex="14" rel="noopener noreferer" target="_blank"> Reglamento
+          <a href="https://celeste.blob.core.windows.net/clients-assets/pp-unmdp/REGLAMENTO-PP-UNMP-2023.pdf" tabIndex="14" rel="noopener noreferer" target="_blank"> Reglamento
           </a>
         </div>
       </div>

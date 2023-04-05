@@ -15,10 +15,10 @@ class BannerWelcome extends Component {
     return (
       <div id='bannerwelcome' className='banner-welcome'>
         <img src={config.propuestasAbiertas ? '/ext/lib/site/banner-welcome/vector.png' : '/ext/lib/site/banner-welcome/handlewithcare.png'} className="image-large" alt="Icono proyectistas"/>
-        <p className="title">{config.propuestasAbiertas ? '¡La subida de ideas está abierta!': '¡Próximamente se abrirá el formulario de subida de ideas!'}</p>
+        <p className="title">{config.propuestasAbiertas ? '¡La convocatoria ya está abierta!' : '¡Próximamente abrirá la convocatoria de ideas!'}</p>
         <p className="subtitle">{
         config.votacionAbierta ? 'Podés votar hasta 3 proyectos' : 
-        config.propuestasAbiertas ? 'Te invitamos a compartir tus ideas para mejorar la Universidad y a conocer las ideas de tus Compañeros/as':
+        config.propuestasAbiertas ? 'Te invitamos a compartir tus ideas que luego se convertirán en proyectos de mejora para la Universidad':
         'El formulario se abrirá próximamente, mientras tanto te invitamos a conocer el reglamento y los términos y condiciones del pp.'
         }</p>
 
@@ -31,7 +31,7 @@ class BannerWelcome extends Component {
       
           </div>
           <div className='col-md-6 button-rounded' >
-          <Link to='/propuestas' tabIndex="13"> Ver ideas
+          <Link to='/propuestas' tabIndex="13"> Conocé las ideas
           </Link>
           </div>
           {/* <div className="col-md-3">
@@ -41,11 +41,11 @@ class BannerWelcome extends Component {
           <div className="col-md-6 button-rounded" >
         
           
-          <Link to="/s/reglamento" tabIndex="14" rel="noopener noreferer">Reglamento</Link>
+          <Link to="https://celeste.blob.core.windows.net/clients-assets/pp-unmdp/REGLAMENTO-PP-UNMP-2023.pdf" tabIndex="14" rel="noopener noreferer">Reglamento</Link>
       
           </div>
           <div className='col-md-6 button-rounded' >
-          <Link to='/s/terminos-y-condiciones' tabIndex="13"> Terminos y Condiciones
+          <Link to='/s/acerca-de' tabIndex="13"> Acerca de
           </Link>
           </div>
         </div>}
