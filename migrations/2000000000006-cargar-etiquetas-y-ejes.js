@@ -25,14 +25,13 @@ const tags = etiquetas.map(etiqueta => {
 })
 
 const ejes = [
-  { nombre: 'Innovación', hash: 'innovacion' },
-  { nombre: 'Proximidad y sustentabilidad', hash: 'proximidad-sustentabilidad' },
-  { nombre: 'Género e inclusión', hash: 'genero-inclusion' },
-  { nombre: 'Aprendizajes, investigación e internacionalización', hash: 'aprendizajes-investigacion-internacionalizacion' },
-  { nombre: 'Modernización y transparencia', hash: 'modernizacion-transparencia' },
-  { nombre: 'Bioseguridad', hash: 'bioseguridad' },
-  { nombre: 'Otro', hash: 'otro' }
+  { nombre: 'Equidad de Género', fontAwesomeIcon: 'fas fa-transgender', color: '#B751C8', hash: 'equidad-de-genero' },
+  { nombre: 'Diversidad', fontAwesomeIcon: 'fas fa-users-line', color: '#F9B678', hash: 'diversidad' },
+  { nombre: 'Accesibilidad', fontAwesomeIcon: 'fas fa-wheelchair-move', color: '#FF5353', hash: 'accesibilidad' },
+  { nombre: 'Sostenibilidad', fontAwesomeIcon: 'fas fa-seedilng', color: '#33CC99', hash: 'sostenibilidad' },
+  { nombre: 'Innovación', fontAwesomeIcon: 'fas fa-podcast', color: '#9E9CFB', hash: 'innovacion' },
 ]
+
 
 /**
  * Make any changes you need to make to the database here

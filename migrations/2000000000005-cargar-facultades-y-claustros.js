@@ -10,13 +10,14 @@ const facultades = [
   { nombre: 'Facultad de Ciencias Agrarias', abreviacion: 'FCA' },
   { nombre: 'Facultad de Ciencias de la Salud y Trabajo Social', abreviacion: 'FCSYTS' },
   { nombre: 'Facultad de Ciencias Económicas y Sociales', abreviacion: 'FCEyS' },
-  { nombre: ' Facultad de Ciencias Exactas y Naturales', abreviacion: 'FCEyN' },
+  { nombre: 'Facultad de Ciencias Exactas y Naturales', abreviacion: 'FCEyN' },
   { nombre: 'Facultad de Derecho', abreviacion: 'FD' },
   { nombre: 'Facultad de Humanidades', abreviacion: 'FH' },
-  { nombre: 'Facultad de Ingeniería', abreviacion: 'Fi' },
+  { nombre: 'Facultad de Ingeniería', abreviacion: 'FI' },
   { nombre: 'Facultad de Psicologia', abreviacion: 'F.PSICO' },
   { nombre: 'Escuela Superior de Medicina', abreviacion: 'ESM' },
   { nombre: 'Colegio Nacional Arturo Illia', abreviacion: 'CNAI' },
+  { nombre: 'Rectorado', abreviacion: 'Rec' },
 ]
 const claustros = [
   { nombre: 'Estudiantes' },

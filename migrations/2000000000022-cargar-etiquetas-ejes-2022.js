@@ -5,21 +5,25 @@ const nombreMigrationParaLog = 'cargar etiquetas y ejes 2022'
 const Tag = models.Tag
 const Eje = models.Eje
 
-const ejes = [
-  { nombre: 'Equidad de Género', color: '#B751C8', hash: 'equidad-de-genero' },
-  { nombre: 'Diversidad', color: '#F9B678', hash: 'diversidad' },
-  { nombre: 'Interculturalidad', color: '#A7A94D', hash: 'interculturalidad' },
-  { nombre: 'Accesibilidad', color: '#FF5353', hash: 'accesibilidad' },
-  { nombre: 'Sostenibilidad', color: '#33CC99', hash: 'sostenibilidad' },
-  { nombre: 'Innovación', color: '#9E9CFB', hash: 'innovacion' },
-  { nombre: 'Salud', color: '#83D2FF', hash: 'salud' }
-]
+// 1. "transgender" - Equidad de Género
+// 2. "user-line" - Diversidad
+// 3. "wheelchair-move" Accesibilidad
+// 4. "seeedliing" - Sostenibilidad
+// 5. "podcast" - Innovación
 
+const ejes = [
+  { nombre: 'Equidad de Género', fontAwesomeIcon: 'fas fa-transgender', color: '#B751C8', hash: 'equidad-de-genero' },
+  { nombre: 'Diversidad', fontAwesomeIcon: 'fas fa-users-line', color: '#F9B678', hash: 'diversidad' },
+  { nombre: 'Accesibilidad', fontAwesomeIcon: 'fas fa-wheelchair-move', color: '#FF5353', hash: 'accesibilidad' },
+  { nombre: 'Sostenibilidad', fontAwesomeIcon: 'fas fa-seedilng', color: '#33CC99', hash: 'sostenibilidad' },
+  { nombre: 'Innovación', fontAwesomeIcon: 'fas fa-podcast', color: '#9E9CFB', hash: 'innovacion' },
+]
 
 const tags = ejes.map(eje => {
   return {
     name: eje.nombre,
     hash: eje.hash,
+    fontAwesomeIcon: eje.fontAwesomeIcon,
     image: 'people',
     color: eje.color
   }
