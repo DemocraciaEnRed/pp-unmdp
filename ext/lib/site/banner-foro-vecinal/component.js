@@ -7,7 +7,7 @@ export default function BannerForoVecinal (props) {
     <section className='container-fluid banner-fv'>
      
       <div className='banner'>
-      {adminTexts && (adminTexts['home-video1-mp4'] || adminTexts['home-video1-webm'] || adminTexts['home-video2-mp4'] || adminTexts['home-video2-webm']) && 
+      {/* {adminTexts && (adminTexts['home-video1-mp4'] != '' || adminTexts['home-video1-webm'] != '' || adminTexts['home-video2-mp4'] != '' || adminTexts['home-video2-webm'] != '') && 
         Math.random(1) > 0.5 ? (
           <video playsInline autoPlay muted loop>
             <source src={ adminTexts && adminTexts['home-video1-mp4'] }  type='video/mp4' />
@@ -19,7 +19,7 @@ export default function BannerForoVecinal (props) {
             <source src={ adminTexts && adminTexts['home-video2-webm'] } type='video/webm' />
           </video>
         )
-      }
+      } */}
 
       </div>
       <div className='contenedor'>
