@@ -9,10 +9,10 @@ router.childRoutes.unshift({
   component: AcercaDe
 })
 
-router.childRoutes.unshift({
-  path: 's/terminos-y-condiciones',
-  component: TyC
-})
+// router.childRoutes.unshift({
+//   path: 's/terminos-y-condiciones',
+//   component: TyC
+// })
 
 router.childRoutes.unshift({
   path: 's/foro-presencial',
