@@ -167,7 +167,7 @@ class Header extends Component {
                 className='header-link'
                 tabIndex="3"
                 >
-                  Proyectos Y Propuestas
+                  Propuestas
               </Link>
             </div>
             <div className={`header-item ${window.location.pathname.includes('/acerca-de') ? 'active' : ''}`}>
@@ -176,7 +176,7 @@ class Header extends Component {
                 className='header-link'
                 tabIndex="2"
                 >
-                  Acerca de
+                  Información
               </Link>
             </div>
             {<div className={`header-item ${window.location.pathname.includes('/foro-presencial') ? 'active' : ''}`}>

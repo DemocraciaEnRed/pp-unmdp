@@ -23,7 +23,7 @@ const Footer = (props) => {
             <span>Fax 54.223.492.1710</span>
             <br/>
             <span className='c-white'>Email para consultas: </span>
-            <a tabIndex="8" href="mailto:webadmin@mdp.edu.ar">webadmin@mdp.edu.ar</a>
+            <a tabIndex="8" href="mailto:presupuestoparticipativo@mdp.edu.ar">presupuestoparticipativo@mdp.edu.ar</a>
           </p>
         </div>
         <div className='mapa-box'>
@@ -36,7 +36,7 @@ const Footer = (props) => {
           <a className='social-facebook' tabIndex="9"  href='https://www.facebook.com/unmdp/ ' target="_blank"/>
           <a className='social-instagram' tabIndex="10"  href='https://www.instagram.com/unmdp_oficial/' target="_blank" />
           <a className='social-twitter' tabIndex="11"  href='https://twitter.com/unmdp/' target="_blank" />
-          <a className='social-mail' tabIndex="12"  href='mailto:webadmin@mdp.edu.ar' target="_blank"/>
+          <a className='social-mail' tabIndex="12"  href='mailto:presupuestoparticipativo@mdp.edu.ar' target="_blank"/>
         </div>
         <div className='logos'>
           <a href='https://www.mdp.edu.ar/' aria-label="Link a pagina universidad nacional de mar del plata" target='_blank'><img src="/ext/lib/site/footer/logo-desktop.png" className='hidden-sm hidden-xs img-responsive logo-unmdp' alt="Logo universidad nacional de mar del plata"/></a>

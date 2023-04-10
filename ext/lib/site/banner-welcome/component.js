@@ -45,7 +45,7 @@ class BannerWelcome extends Component {
       
           </div>
           <div className='col-md-6 button-rounded' >
-          <Link to='/s/acerca-de' tabIndex="13"> Acerca de
+          <Link to='/s/acerca-de' tabIndex="13"> Información
           </Link>
           </div>
         </div>}

@@ -43,7 +43,7 @@ class MobileMenu extends Component {
                     onClick={this.props.toggleOnClick}
                     tabIndex="2"
                     >
-                    Acerca de
+                    Información
                   </Link>
                 </div>
                 <div className='header-item'>
@@ -53,7 +53,7 @@ class MobileMenu extends Component {
                     activeStyle={{ color: '#fff', backgroundColor: '#272727' }}
                     onClick={this.props.toggleOnClick}
                     tabIndex="3">
-                    Proyectos Y Propuestas
+                    Propuestas
                   </Link>
                 </div>
                 {/* <div className='header-item'>

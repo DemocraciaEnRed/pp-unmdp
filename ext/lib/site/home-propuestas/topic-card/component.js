@@ -159,7 +159,7 @@ export class TopicCard extends Component {
         <div className="tags-container">
         <i className='icon-tags'></i>
           { isProyecto ? <span>Proyecto</span> : <span>Idea</span>}
-          { topic.tag && <span style={{ backgroundColor: topic.tag.color }}>{topic.tag.name}</span> }
+          { topic.tag && <span style={{ backgroundColor: topic.tag.color }}><i className={topic.tag.fontAwesomeIcon}></i>{topic.tag.name}</span> }
         </div>
           {/* { topic.tags && topic.tags.length > 0 && (
               <div className='topic-card-tags'>

@@ -134,10 +134,10 @@ export default class Page extends Component {
     return (
       <div>
         <section className="banner-static-2022 about">
-          <h1>Acerca de</h1>
+          <h1>Información</h1>
         </section>
         <div className="post-banner-static-2022 container">
-          <span>Inscribirte para a sumarte como proyectista de la Comisión Universitaria este {config.currentEdition}.</span>
+          <span>Presupuesto Participativo {config.currentEdition}</span>
         </div>
         <Anchor id='container'>
           <div className="container">

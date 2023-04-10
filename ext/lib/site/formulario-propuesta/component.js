@@ -459,7 +459,7 @@ class FormularioPropuesta extends Component {
                 {
                   availableTags.map((tag) => {
                     return (
-                      <li key={tag.id}><span onClick={this.selectTag(tag)} value={tag.id} className='tag' style={this.getStyleSelected(tag)}>{tag.name}</span></li>
+                      <li key={tag.id}><span onClick={this.selectTag(tag)} value={tag.id} className='tag' style={this.getStyleSelected(tag)}><i className={tag.fontAwesomeIcon}></i>&nbsp;{tag.name}</span></li>
                     )
                   })
                 }
