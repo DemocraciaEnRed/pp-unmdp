@@ -111,11 +111,11 @@ class Page extends Component {
       <Anchor id='container-top'>
       <div id="foro-presencial">
         <section className="the-banner">
-          Votación Presencial
+          Eventos
         </section>
         <div className="the-subbanner-container">
           <div className="the-subbanner container">
-            En estos puntos UNMDP Decide podrás votar de manera presencial. Te esperamos!
+            En estos puntos UNMDP Decide podrás participar de manera presencial. ¡Te esperamos!
           </div>
         </div>
         <div className="the-content">
