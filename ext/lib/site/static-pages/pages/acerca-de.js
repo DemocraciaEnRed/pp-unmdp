@@ -20,7 +20,6 @@ const aboutUs=[
   {
     question:'¿Cómo participo?',
     answer:`<p><span>Te invitamos a registrarte en la plataforma aquí para sumar ideas. Tenes que elegir el eje temático que mejor represente tu propuesta y luego escribir con lenguaje claro y sencillo la propuesta.</span></p> 
-            <p><span>A su vez, podes expresar tu interés con propuestas que te interesen de cada temática. Podrás poner “me gusta” a temas de tu interés y comentar sobre las propuestas en la plataforma.</span></p> 
             <p><span>A su vez, podes expresar tu interés por las otras propuestas que suban tus compañeros/as. Con esta opción podrás poner “me gusta” a temas de tu interés y comentar sobre las propuestas en la plataforma.</span></p> 
             <p><span>Finalmente cuándo lleguemos a la etapa de votación vas a poder elegir un proyecto. Es muy importante que fomentemos el diálogo informado y respetuoso.</span></p> `
   },
@@ -46,10 +45,6 @@ const aboutUs=[
   {
     question:'¿Cuántas ideas puedo subir?',
     answer:'<p><span>Podes subir todas las ideas que quieras, aunque cada una en un formulario independiente.</span></p>'
-  },
-  {
-    question:'¿Puedo modificar mi idea una vez que fue enviada?',
-    answer:'<p><span>Deben implementarse dentro de las dependencias de la UNMDP y en su intención deben contemplar bienes, servicios o beneficios para la comunidad universitaria en su conjunto. No pueden comprometer contratación de servicios o personas que sean de carácter permanente ni realizar inversión en infraestructura.</span></p>'
   },
   {
     question:'¿Puedo modificar mi idea una vez que fue enviada?',
