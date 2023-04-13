@@ -10,6 +10,7 @@ const dummyPadron = [
 /**
  * Make any changes you need to make to the database here
  */
+class SaltearPromises { }
 exports.up = function up (done) {
   // done() devuelve al Migrator de lib/migrations
   dbReady()
