@@ -16,12 +16,8 @@ class BannerWelcome extends Component {
       <div id='bannerwelcome' className='banner-welcome'>
         <img src={config.propuestasAbiertas ? '/ext/lib/site/banner-welcome/vector.png' : '/ext/lib/site/banner-welcome/handlewithcare.png'} className="image-large" alt="Icono proyectistas"/>
         {/* <p className="title">{config.propuestasAbiertas ? '¡La convocatoria ya está abierta!' : '¡Próximamente abrirá la convocatoria de ideas!'}</p> */}
-        <p className="title">{config.propuestasAbiertas ? '¡Pronto podrás conocer las ideas a votar!' : '¡Próximamente abrirá la convocatoria de ideas!'}</p>
-        <p className="subtitle">{
-        config.votacionAbierta ? 'Podés votar hasta 3 proyectos' : 
-        config.propuestasAbiertas ? 'El equipo de gestión y coordinación a cargo del programa está evaluando cada una de las ideas.':
-        'El formulario se abrirá próximamente, mientras tanto te invitamos a conocer el reglamento y los términos y condiciones del pp.'
-        }</p>
+        <p className="title">¡Pronto podrás conocer las ideas a votar!</p>
+        <p className="subtitle">El equipo de gestión y coordinación a cargo del programa está evaluando cada una de las ideas.</p>
         {/* <p className="subtitle">{
         config.votacionAbierta ? 'Podés votar hasta 3 proyectos' : 
         config.propuestasAbiertas ? 'Te invitamos a compartir tus ideas que luego se convertirán en proyectos de mejora para la Universidad':
