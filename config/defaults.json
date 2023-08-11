@@ -115004,7 +115004,8 @@
     "votacionTextoAbierta",
     "votacionTextoCerrada",
     "currentEdition",
-    "enableUploadPictures"
+    "enableUploadPictures",
+    "cantVotesAvailable"
   ],
   "socialshare": {
     "siteName": "DemocracyOS",
@@ -115078,6 +115079,7 @@
   "votacionTextoCerrada": "Votación cerrada!",
   "currentEdition": "2022",
   "enableUploadPictures": false,
+  "cantVotesAvailable": 1,
   "azureStorage": {
     "account": "",
     "container": "",

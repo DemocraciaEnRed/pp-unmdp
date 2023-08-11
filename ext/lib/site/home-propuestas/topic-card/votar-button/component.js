@@ -18,13 +18,14 @@ class VotarButton extends Component {
     this.props.onVote(topicId, false)
   }
 
+  
   render() {
     const { topic, onVote, user, voterInformation } = this.props
     let { openQuestion } = this.state
 
     const topicVoted = voterInformation.votes && voterInformation.votes.includes(topic.id)
     // si ya votó algo y no es este topic, no muestres botón
-    if (voterInformation.votes && voterInformation.votes.length >= 3 && !topicVoted) return null
+    if (voterInformation.votes && voterInformation.votes.length >= config.cantVotesAvailable && !topicVoted) return null
 
     if (topicVoted) openQuestion = false
     if (!voterInformation.dni) return <div></div>

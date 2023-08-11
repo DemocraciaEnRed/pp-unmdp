@@ -1,4 +1,5 @@
 import React from 'react'
+import config from 'lib/config'
 
 export default function BannerListadoTopics(props) {
 
@@ -8,18 +9,18 @@ export default function BannerListadoTopics(props) {
   const twitterText = `Sumate a elegir proyectos para la Universidad que queremos. ` + socialLinksUrl
   
   const messageVoto = (votes) => {
-    switch (3 - votes.length) {
+    switch (config.cantVotesAvailable - (votes ? votes.length : 0)) {
       case 3: return "Tenés 3 votos disponibles"
       case 2: return "Todavía podés votar 2 proyectos!"
       case 1: return "Todavía podés votar 1 proyecto!"
-      case 0: return `Ya votaste tres proyectos. <a target='_blank' href='http://twitter.com/share?text=${twitterText}' rel='noopener noreferrer'>Compartí para que más personas voten</a>`
+      case 0: return `Ya votaste! <a target='_blank' href='http://twitter.com/share?text=${twitterText}' rel='noopener noreferrer'>Compartí para que más personas voten</a>`
       default: return false
     }
   }
 
   return (
     <div>
-      {userLoggedIn && dni !== '' && votes && 
+      {userLoggedIn && dni !== '' && (votes || []) && 
         <header className='banner-votos'>
           <h1 className='votos-title'>
             <div dangerouslySetInnerHTML={{__html: messageVoto(votes)}} />
@@ -32,11 +33,7 @@ export default function BannerListadoTopics(props) {
       {/*  <h1 className='proyectos-title'>{stage === 'votacion' ? 'Proyectos Ganadores' : 'Seguimiento de proyectos' }</h1> */}
       {/* <h2 className='proyectos-subtitle'>{stage === 'votacion' ? 'Acá podés encontrar los proyectos ganadores que vamos a ejecutar en 2020' : 'Acá podés encontrar los proyectos que fueron aprobados en votaciones anteriores y ver en qué estado de su ejecución se encuentran.'}</h2> */}
       {/* <h1 className='proyectos-title'>Estamos trabajando, falta poco para que publiquemos los proyectos a votacion.</h1> */}
-      {
-      (userLoggedIn && props.handlerVotacion) ? 
-      <button className='iniciar-votacion' onClick={props.handlerVotacion}>{dni === '' ? 'Iniciar Votación': 'Finalizar Votación'}</button> :
       <h1 className='proyectos-title'>{props.title}</h1>
-      }
       { props.subtitle &&
         <h2 className='proyectos-subtitle' dangerouslySetInnerHTML={{__html: props.subtitle}}></h2>
       }

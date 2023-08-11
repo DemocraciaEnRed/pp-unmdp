@@ -486,7 +486,7 @@ class HomePropuestas extends Component {
           <BannerListadoTopics
             //btnText={config.propuestasAbiertas ? 'Subí tu idea' : undefined}
             //btnLink={config.propuestasAbiertas ? '/formulario-idea' : undefined}
-            title='Ideas y Proyectos'
+            title={config.propuestasAbiertas ? 'Lista de ideas' : (config.votacionAbierta ? 'Lista de proyectos' : 'Lista de proyectos')}
             handlerVotacion={config.votacionAbierta && forum && forum.privileges && forum.privileges.canEdit && this.handlerVotacion}
             user={user}
             voterInformation={voterInformation} />
