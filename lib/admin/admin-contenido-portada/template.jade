@@ -132,4 +132,48 @@
             maxlength=800,
             validate='required'
           )
+        .form-group
+          label= 'Banner al fondo de la página'
+          h6= 'Título:'
+          input.form-control(
+            type='text',
+            data-name='home-banner-title',
+            maxlength=200,
+            validate='required'
+          )
+          h6= 'Texto:'
+          input.form-control(
+            type='text',
+            data-name='home-banner-text',
+            maxlength=300,
+            validate='required'
+          )
+          h6= 'Botón 1 (Texto):'
+          input.form-control(
+            type='text',
+            data-name='home-banner-button1-text',
+            maxlength=100,
+            validate='required'
+          )
+          h6= 'Botón 1 (Link):'
+          input.form-control(
+            type='text',
+            data-name='home-banner-button1-link',
+            maxlength=500,
+            validate='required'
+          )
+          h6= 'Botón 2 (Texto):'
+          input.form-control(
+            type='text',
+            data-name='home-banner-button2-text',
+            maxlength=100,
+            validate='required'
+          )
+          h6= 'Botón 2 (Link):'
+          input.form-control(
+            type='text',
+            data-name='home-banner-button2-link',
+            maxlength=500,
+            validate='required'
+          )
         .form-group: button.btn.btn-success.btn-block.btn-lg= t('settings.save')

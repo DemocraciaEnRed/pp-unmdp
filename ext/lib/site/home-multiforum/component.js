@@ -54,7 +54,7 @@ export default class HomeMultiforumOverride extends Component {
             <Link to={'/propuestas'} className="boton-foro" href="">Ir a UNMDP DECIDE</Link>
           </div> */}
           {/* <Barrios /> */}
-          <BannerWelcome />
+          <BannerWelcome texts={this.state.texts} />
           <Jump goTop={this.goTop} />
           <Footer/>
         </Anchor>
