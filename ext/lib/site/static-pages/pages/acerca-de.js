@@ -138,7 +138,23 @@ export default class Page extends Component {
           <div className="container">
           <div className="">
               <div className="">
-                <p className='h4 text-center'>Podés leer el reglamento completo haciendo click <a href="https://celeste.blob.core.windows.net/clients-assets/pp-unmdp/REGLAMENTO-PP-UNMP-2023.pdf" rel="noopener noreferer" target="_blank">aquí</a></p>
+                <div className="row" style={{alignItems:'center'}}>
+                  <div className="col-md-4 text-center">
+                    <h2 className="h2"><b>REGLAMENTO</b></h2>
+                    <p className='h5'>Podés leer el reglamento completo haciendo click en el botón</p>
+                    <a href="https://celeste.blob.core.windows.net/clients-assets/pp-unmdp/REGLAMENTO-PP-UNMP-2023.pdf" target='_blank' className="btn btn-secondary">Reglamento ↗️</a>
+                  </div>
+                  <div className="col-md-4 text-center">
+                    <h2 className="h2"><b>INFORME DE RESULTADOS</b></h2>
+                    <p className='h5'>Podés conocer el informe de resultados y análisis haciendo click en el botón</p>
+                    <a href="https://celeste.blob.core.windows.net/clients-assets/pp-unmdp/pp2023-informe-resultados-analisis.pdf" target='_blank' className="btn btn-secondary">Analisis y resultados ↗️</a>
+                  </div>
+                  <div className="col-md-4 text-center">
+                    <h2 className="h2"><b>IDEAS ELIMINADAS</b></h2>
+                    <p className='h5'>Podés conocer las ideas que no pasaron a la votación haciendo click en el botón</p>
+                    <a href="https://celeste.blob.core.windows.net/clients-assets/pp-unmdp/pp2023-ideas-eliminadas.pdf" target='_blank' className="btn btn-secondary">Ideas eliminadas ↗️</a>
+                  </div>
+                </div>
                 <br />
                 <br />
                 <Accordion startPosition={openSection}>

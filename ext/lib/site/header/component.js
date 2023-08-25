@@ -167,7 +167,7 @@ class Header extends Component {
                 className='header-link'
                 tabIndex="3"
                 >
-                  Propuestas
+                  {config.propuestasAbiertas ? 'Propuestas' : (config.votacionAbierta ? 'Proyectos' : 'Proyectos')}
               </Link>
             </div>
             <div className={`header-item ${window.location.pathname.includes('/acerca-de') ? 'active' : ''}`}>
