@@ -21,10 +21,10 @@ class BannerWelcome extends Component {
         <div className="container">
           <div className="row">
             <div className="col-md-6 button-rounded" >
-              <Link to={props.texts['home-banner-button1-link']} tabIndex="14" rel="noopener noreferer">{props.texts['home-banner-button1-text']}</Link>
+              <a href={props.texts['home-banner-button1-link']} tabIndex="14" target="_blank">{props.texts['home-banner-button1-text']}</a>
             </div>
             <div className='col-md-6 button-rounded' >
-              <Link to={props.texts['home-banner-button2-link']} tabIndex="13">{props.texts['home-banner-button2-text']}</Link>
+              <a href={props.texts['home-banner-button2-link']} tabIndex="13" target="_blank">{props.texts['home-banner-button2-text']}</a>
             </div>
           </div>
         </div>
