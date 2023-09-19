@@ -90,8 +90,14 @@ export class TopicCard extends Component {
     const text = createClauses(topic, fullText)
 
     const renderVotarButton = () => {
-      if (isProyecto && config.votacionVisible && config.votacionAbierta) {
+      if (isLoggedIn && isProyecto && config.votacionVisible && config.votacionAbierta) {
         return (<VotarButton topic={topic} onVote={onVote} voterInformation={voterInformation} key={`votar-${voterInformation.dni}-${topic.id}`} />)
+      } else if (!isLoggedIn && isProyecto && config.votacionVisible && config.votacionAbierta) {
+        return (
+          <a className='btn btn-primary btn-filled' href={`/signin?ref=${encodeURIComponent(window.location.pathname)}`}>
+            Votar este proyecto
+          </a>
+        )
       } else {
         return null
       }
